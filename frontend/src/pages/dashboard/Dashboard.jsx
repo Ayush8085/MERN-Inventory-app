@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const { products, isLoading, isError, message } = useSelector(
-    (state) => state.product
+    (state) => state.product,
   );
 
   useEffect(() => {

@@ -5,7 +5,7 @@ export const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
 export const validateEmail = (email) => {
   return email.match(
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
   );
 };
 
@@ -15,7 +15,7 @@ export const registerUser = async (userData) => {
     const response = await axios.post(
       `${BACKEND_URL}/api/users/register`,
       userData,
-      { withCredentials: true }
+      { withCredentials: true },
     );
     if (response.statusText === "OK") {
       toast.success("User Registered successfully");
@@ -35,7 +35,7 @@ export const loginUser = async (userData) => {
   try {
     const response = await axios.post(
       `${BACKEND_URL}/api/users/login`,
-      userData
+      userData,
     );
     if (response.statusText === "OK") {
       toast.success("Login Successful...");
@@ -68,7 +68,7 @@ export const forgotPassword = async (userData) => {
   try {
     const response = await axios.post(
       `${BACKEND_URL}/api/users/forgotpassword`,
-      userData
+      userData,
     );
     toast.success(response.data.message);
   } catch (error) {
@@ -85,7 +85,7 @@ export const resetPassword = async (userData, resetToken) => {
   try {
     const response = await axios.put(
       `${BACKEND_URL}/api/users/resetpassword/${resetToken}`,
-      userData
+      userData,
     );
     return response.data;
   } catch (error) {
@@ -128,7 +128,7 @@ export const updateUser = async (formData) => {
   try {
     const response = await axios.patch(
       `${BACKEND_URL}/api/users/updateuser`,
-      formData
+      formData,
     );
     return response.data;
   } catch (error) {
@@ -144,7 +144,7 @@ export const changePassword = async (formData) => {
   try {
     const response = await axios.patch(
       `${BACKEND_URL}/api/users/changepassword`,
-      formData
+      formData,
     );
     return response.data;
   } catch (error) {

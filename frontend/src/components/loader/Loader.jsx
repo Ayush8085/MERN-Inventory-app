@@ -10,7 +10,7 @@ const Loader = () => {
         <img src={loaderImg} alt="Loading..." />
       </div>
     </div>,
-    document.getElementById("loader")
+    document.getElementById("loader"),
   );
 };
 

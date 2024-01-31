@@ -17,7 +17,7 @@ const ProductDetail = () => {
 
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const { product, isLoading, isError, message } = useSelector(
-    (state) => state.product
+    (state) => state.product,
   );
 
   const stockStatus = (quantity) => {

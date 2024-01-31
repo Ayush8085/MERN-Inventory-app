@@ -32,11 +32,11 @@ const EditProduct = () => {
     setProduct(productEdit);
 
     setImagePreview(
-      productEdit && productEdit.image ? `${productEdit.image.filePath}` : null
+      productEdit && productEdit.image ? `${productEdit.image.filePath}` : null,
     );
 
     setDescription(
-      productEdit && productEdit.description ? productEdit.description : ""
+      productEdit && productEdit.description ? productEdit.description : "",
     );
   }, [productEdit]);
 

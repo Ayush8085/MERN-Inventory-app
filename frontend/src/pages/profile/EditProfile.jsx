@@ -60,7 +60,7 @@ const EditProfile = () => {
         // First save image to cloudinary
         const response = await fetch(
           "https://api.cloudinary.com/v1_1/dctmcegfu/image/upload",
-          { method: "post", body: image }
+          { method: "post", body: image },
         );
         const imgData = await response.json();
         imageURL = imgData.url.toString();

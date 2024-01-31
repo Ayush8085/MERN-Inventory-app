@@ -30,7 +30,7 @@ export const createProduct = createAsyncThunk(
       console.log(message);
       return thunkAPI.rejectWithValue(message);
     }
-  }
+  },
 );
 
 // Get all products
@@ -49,7 +49,7 @@ export const getProducts = createAsyncThunk(
       console.log(message);
       return thunkAPI.rejectWithValue(message);
     }
-  }
+  },
 );
 
 // Delete a Product
@@ -68,7 +68,7 @@ export const deleteProduct = createAsyncThunk(
       console.log(message);
       return thunkAPI.rejectWithValue(message);
     }
-  }
+  },
 );
 
 // Get a product
@@ -87,7 +87,7 @@ export const getProduct = createAsyncThunk(
       console.log(message);
       return thunkAPI.rejectWithValue(message);
     }
-  }
+  },
 );
 // Update product
 export const updateProduct = createAsyncThunk(
@@ -105,7 +105,7 @@ export const updateProduct = createAsyncThunk(
       console.log(message);
       return thunkAPI.rejectWithValue(message);
     }
-  }
+  },
 );
 
 const productSlice = createSlice({
