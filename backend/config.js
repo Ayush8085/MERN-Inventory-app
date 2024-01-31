@@ -1,4 +1,4 @@
-const dotenv = require('dotenv').config();
+const dotenv = require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -13,13 +13,13 @@ const EMAIL_PASS = process.env.EMAIL_PASS;
 const CLOUDINARY_URL = process.env.CLOUDINARY_URL;
 
 module.exports = {
-    PORT,
-    MONGO_URI,
-    JWT_SECRET,
-    NODE_ENV,
-    FRONTEND_URL,
-    EMAIL_PASS,
-    EMAIL_USER,
-    EMAIL_HOST,
-    CLOUDINARY_URL,
-}
+  PORT,
+  MONGO_URI,
+  JWT_SECRET,
+  NODE_ENV,
+  FRONTEND_URL,
+  EMAIL_PASS,
+  EMAIL_USER,
+  EMAIL_HOST,
+  CLOUDINARY_URL,
+};

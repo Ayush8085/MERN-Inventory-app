@@ -40,7 +40,7 @@ const userSchema = mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 //   Encrypt password before saving to DB
