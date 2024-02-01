@@ -1,8 +1,8 @@
 import React from "react";
-import { RiProductHuntLine } from "react-icons/ri";
+import { ImLeaf } from "react-icons/im";
 import { Link } from "react-router-dom";
 import "./Home.scss";
-import heroImg from "../../assets/inv-img.png";
+import heroImg from "../../assets/hero.png";
 import { ShowOnLogin, ShowOnLogout } from "../../components/protect/HiddenLink";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     <div className="home">
       <nav className="container --flex-between ">
         <div className="logo">
-          <RiProductHuntLine size={35} />
+          <ImLeaf size={30} />
         </div>
 
         <ul className="home-links">

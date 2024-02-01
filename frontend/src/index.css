@@ -197,7 +197,8 @@ p {
   color: #007bff;
 }
 .--color-danger {
-  color: orangered;
+  /* color: orangered; */
+  color: #003566;
 }
 .--color-success {
   color: #28a745;
@@ -328,7 +329,7 @@ p {
 }
 .--btn-danger {
   color: #fff;
-  background: orangered;
+  background: #003566;
 }
 
 .--btn-success {
