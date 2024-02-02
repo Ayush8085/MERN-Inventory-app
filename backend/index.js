@@ -8,7 +8,7 @@ const productRoute = require("./routes/productRoute");
 const contactRoute = require("./routes/contactRoute");
 const errorHandler = require("./middleWare/errorMiddleware");
 const path = require("path");
-const { MONGO_URI, PORT } = require("./config");
+const { MONGO_URI, PORT, FRONTEND_URL } = require("./config");
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [FRONTEND_URL],
     credentials: true,
   }),
 );
